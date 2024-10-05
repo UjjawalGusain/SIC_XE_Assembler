@@ -1,3 +1,4 @@
+```
 sicxe-assembler/
 │
 ├── include/                     # Header files
@@ -22,27 +23,36 @@ sicxe-assembler/
 │
 ├── Makefile                     # Build instructions for the project
 └── README.md                    # Documentation and instructions
-
+```
 
 Example file to read:
 
 File name: PROG
-*******************************************************************
-PROG    START   1000      ; Starting address                      *
-FIRST   LDA     NUM       ; Load value from NUM into accumulator  *
-        ADD     COUNT     ; Add COUNT to accumulator              *
-        STA     TOTAL     ; Store result in TOTAL                 *
-        JLT     FIRST     ; Jump to FIRST if less than zero       *
-        END                                                       *
-                                                                  *
-NUM     WORD    5         ; Define NUM as 5                       *
-COUNT   WORD    10        ; Define COUNT as 10                    *
-TOTAL   RESW    1         ; Reserve 1 word for TOTAL              *
-*******************************************************************
+******************************************************************
+```
+PROG    START   1000      ; Starting address                  
+
+FIRST   LDA     NUM       ; Load value from NUM into accumulator  
+
+        ADD     COUNT     ; Add COUNT to accumulator              
+        
+        STA     TOTAL     ; Store result in TOTAL                 
+        
+        JLT     FIRST     ; Jump to FIRST if less than zero       
+        
+        END                                                       
+        
+NUM     WORD    5         ; Define NUM as 5                    
+
+COUNT   WORD    10        ; Define COUNT as 10                 
+
+TOTAL   RESW    1         ; Reserve 1 word for TOTAL   
+```
+******************************************************************
 
 
 run command:
-gcc src/assembler.c src/utils.c src/opcode.c src/symbol_table.c src/pass1.c src/pass2.c -o assembler -Iinclude
+```gcc src/assembler.c src/utils.c src/opcode.c src/symbol_table.c src/pass1.c src/pass2.c -o assembler -Iinclude```
 
-assembler.exe
+```assembler.exe```
 
