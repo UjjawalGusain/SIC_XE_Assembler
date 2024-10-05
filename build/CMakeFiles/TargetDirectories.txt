@@ -1,0 +1,3 @@
+D:/newVsCode/SIC_XE_Assembler/build/CMakeFiles/sic_xe_assembler.dir
+D:/newVsCode/SIC_XE_Assembler/build/CMakeFiles/ALL_BUILD.dir
+D:/newVsCode/SIC_XE_Assembler/build/CMakeFiles/ZERO_CHECK.dir
