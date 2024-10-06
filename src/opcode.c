@@ -253,3 +253,13 @@ Opcode *get_opcode(char *mnemonic) {
     }
     return NULL;
 }
+
+int is_opcode(char *opcode) {
+    int i;
+    for(i = 0; i<MAX_OPCODES; i++) {
+        if(strcmp(opTab[i].mnemonic, opcode) == 0) {
+            return 1;
+        }
+    }
+    return 0;
+}

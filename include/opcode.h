@@ -12,5 +12,6 @@ typedef struct {
 // Load opcode table from file or hardcode it
 void load_opcode_table();
 Opcode *get_opcode(char *mnemonic);
+int is_opcode(char *opcode);
 
 #endif

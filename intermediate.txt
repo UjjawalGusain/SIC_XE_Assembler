@@ -5,6 +5,6 @@ PROG       START      1000       1000
            STCH       C1         100C
 ALPHA      RESW       1          100F
 FIVE       WORD       5          1012
-CHARZ      BYTE       C’Z’   1018
-C1         RESB       1          1019
-           END                   1019
+CHARZ      BYTE       C'Z'       1013
+C1         RESB       1          1014
+           END                   1014

@@ -76,12 +76,12 @@ int hex_to_int(const char *hex_str) {
 int calculate_byte_length(const char *operand) {
     if (operand[0] == 'C') { 
         // The format is C'string' (e.g., C'EOF' or C'AB')
-        int length = strlen(operand) - 2; // Exclude the leading 'C' and the quotes
+        int length = strlen(operand) - 3; // Exclude the leading 'C' and the quotes
         return length; 
     } 
     else if (operand[0] == 'X') { 
         // The format is X'hexstring' (e.g., X'1A3F')
-        int length = strlen(operand) - 2; // Exclude the leading 'X' and the quotes
+        int length = strlen(operand) - 3; // Exclude the leading 'X' and the quotes
         return length / 2; // Each byte is represented by 2 hex digits
     } 
     else {

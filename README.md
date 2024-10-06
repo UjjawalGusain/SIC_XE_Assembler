@@ -30,23 +30,16 @@ Example file to read:
 File name: PROG
 ******************************************************************
 ```
-PROG    START   1000      ; Starting address                  
-
-FIRST   LDA     NUM       ; Load value from NUM into accumulator  
-
-        ADD     COUNT     ; Add COUNT to accumulator              
-        
-        STA     TOTAL     ; Store result in TOTAL                 
-        
-        JLT     FIRST     ; Jump to FIRST if less than zero       
-        
-        END                                                       
-        
-NUM     WORD    5         ; Define NUM as 5                    
-
-COUNT   WORD    10        ; Define COUNT as 10                 
-
-TOTAL   RESW    1         ; Reserve 1 word for TOTAL   
+        PROG    START   1000
+        LDA     FIVE
+        STA     ALPHA
+        LDCH    CHARZ
+        STCH    C1
+        ALPHA   RESW    1
+        FIVE    WORD    5
+        CHARZ   BYTE    C'Z'
+        C1      RESB    1
+                END 
 ```
 ******************************************************************
 
